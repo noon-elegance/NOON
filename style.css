@@ -1,0 +1,109 @@
+/* التصميم الأساسي والمظهر الفاخر */
+body {
+    background-color: #0d0d0d; /* أسود غني */
+    color: #f7f7f7; /* أبيض ناصع */
+    font-family: 'Playfair Display', serif; /* خط فاخر (يحتاج للربط من جوجل فونتس) */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    direction: rtl;
+}
+
+.container {
+    padding: 20px;
+    max-width: 90%;
+}
+
+/* تصميم اللوغو */
+.logo {
+    font-size: 3.5em; /* حجم كبير للوغو */
+    font-weight: 400;
+    letter-spacing: 5px; /* تباعد الحروف لمظهر أفخم */
+    margin-bottom: 20px;
+    color: #e0ac57; /* لون ذهبي ناعم */
+}
+
+/* تصميم الجملة المحفزة */
+.tagline {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* تصميم الشعار الفرعي */
+.slogan {
+    font-size: 1em;
+    font-style: italic;
+    color: #aaaaaa;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* تصميم صندوق الاشتراك */
+.signup-box {
+    margin-top: 40px;
+}
+
+.signup-box h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.signup-box input[type="email"] {
+    padding: 12px;
+    width: 70%;
+    max-width: 300px;
+    border: 1px solid #e0ac57;
+    background-color: transparent;
+    color: #f7f7f7;
+    font-size: 1em;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.signup-box button {
+    padding: 12px 30px;
+    background-color: #e0ac57; /* زر بلون ذهبي */
+    color: #0d0d0d;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.signup-box button:hover {
+    background-color: #f2c683;
+}
+
+/* تصميم الروابط الاجتماعية */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.social-links a {
+    color: #e0ac57;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #f2c683;
+}
+
+/* تصميم عداد الوقت */
+.countdown {
+    font-size: 2em;
+    color: #e0ac57;
+    margin-top: 20px;
+}

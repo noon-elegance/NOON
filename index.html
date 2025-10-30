@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NooÉ - Noon Élégance | Coming Soon</title>
+    <!-- Google Fonts: Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">NooÉ</h1>
+        </header>
+
+        <main>
+            <h2 class="tagline">الرقي على وشك الظهور.</h2>
+            
+            <p class="slogan">
+                Noon Élégance:<br>
+                For women who love elegance.
+            </p>
+
+            <div id="countdown" class="countdown">
+                <p>قريباً جداً...</p>
+            </div>
+            
+            <div class="signup-box">
+                <h3>كن أول من يكتشف:</h3>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                    <button type="submit">اشترك</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p class="social-links">
+                <a href="https://www.instagram.com/YourNooEAccount" target="_blank">Instagram</a> | 
+                <a href="#">TikTok</a>
+            </p>
+        </footer>
+    </div>
+    <script>
+      // حدد تاريخ الإطلاق المستهدف (مثال: 1 ديسمبر 2025)
+      var launchDate = new Date("2025-12-01T00:00:00").getTime();
+      var countdown = document.getElementById("countdown");
+
+      function updateCountdown() {
+        var now = new Date().getTime();
+        var distance = launchDate - now;
+
+        if (distance < 0) {
+          countdown.innerHTML = "<p>الموقع الآن متاح!</p>";
+          return;
+        }
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdown.innerHTML = `<span>${days} يوم</span> : <span>${hours} ساعة</span> : <span>${minutes} دقيقة</span> : <span>${seconds} ثانية</span>`;
+      }
+
+      setInterval(updateCountdown, 1000);
+      updateCountdown();
+    </script>
+</body>
+</html>
